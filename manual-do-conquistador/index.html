@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Conquistador | 165 Mensagens Prontas</title>
+    <link rel="icon" href="https://digmax.com.br/wp-content/uploads/2025/11/pesquisa-150x150.png" type="image/png">
+    <meta name="description" content="165 mensagens prontas para puxar assunto, manter o interesse e conduzir a conversa para um encontro.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-page: #000000;
+            --bg-dark: #08080A;
+            --bg-dark-card: #111116;
+            --bg-light: #F4F4F6;
+            --bg-light-card: #FFFFFF;
+            --crimson: #AF1306;
+            --crimson-hover: #8C0E04;
+            --crimson-subtle: rgba(175, 19, 6, 0.12);
+            --gold: #FF9811;
+            --text-white: #FFFFFF;
+            --text-light-muted: #A1A1AA;
+            --text-dark: #121215;
+            --text-dark-muted: #52525B;
+            --cta-green: #19C44A;
+            --cta-green-hover: #0FA83A;
+            --border-dark: #222228;
+            --border-light: rgba(0, 0, 0, 0.08);
+            --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.06);
+            --shadow-dark: 0 14px 35px rgba(0, 0, 0, 0.7);
+            --radius-xl: 24px;
+            --radius-lg: 18px;
+            --radius-md: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-page);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-page);
+            display: flex;
+            justify-content: center;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container Mobile Oficial (480px) */
+        .app-container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--bg-dark);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.95);
+            border-inline: 1px solid #141418;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .section {
+            padding: 38px 20px;
+        }
+
+        .section-dark {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+        }
+
+        .section-light {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--crimson);
+            margin-bottom: 8px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .section-dark h1, .section-dark h2 {
+            color: var(--text-white);
+        }
+
+        .section-light h1, .section-light h2 {
+            color: var(--text-dark);
+        }
+
+        h1 {
+            font-size: 1.75rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.92rem;
+            margin-bottom: 16px;
+        }
+
+        .section-dark p {
+            color: var(--text-light-muted);
+        }
+
+        .section-light p {
+            color: var(--text-dark-muted);
+        }
+
+        /* Top Alert */
+        .top-banner {
+            background: #18090A;
+            color: #FFFFFF;
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            text-align: center;
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(175, 19, 6, 0.4);
+        }
+
+        /* Botão CTA Principal */
+        .btn-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            min-height: 54px;
+            padding: 15px 20px;
+            background: var(--cta-green);
+            color: #FFFFFF !important;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            border-radius: 999px;
+            border: none;
+            box-shadow: 0 12px 28px rgba(25, 196, 74, 0.35);
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-cta:hover {
+            background: var(--cta-green-hover);
+            transform: translateY(-2px);
+        }
+
+        /* 1 — HERO (PRETO) */
+        .hero-section {
+            padding: 30px 20px 34px;
+            text-align: center;
+        }
+
+        .hero-subtitle-lead {
+            color: var(--gold);
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-bottom: 10px;
+        }
+
+        .hero-lead {
+            font-size: 0.94rem;
+            line-height: 1.5;
+            color: var(--text-light-muted);
+            margin-bottom: 22px;
+        }
+
+        .hero-image-loop-container {
+            width: 100%;
+            max-width: 320px;
+            aspect-ratio: 1 / 1.35;
+            margin: 0 auto 18px;
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(175, 19, 6, 0.4);
+            background: #000000;
+        }
+
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-checklist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 14px;
+            margin-top: 10px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-white);
+        }
+
+        .hero-checklist span {
+            color: var(--gold);
+        }
+
+        /* 2 — O QUE VOCÊ VAI RECEBER (BRANCO) */
+        .section-visual-clean {
+            width: 100%;
+            max-width: 310px;
+            margin: 12px auto 18px;
+        }
+
+        .receive-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .receive-card {
+            background: var(--bg-light-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            box-shadow: var(--shadow-card);
+            text-align: left;
+        }
+
+        .icon-box {
+            width: 42px;
+            height: 42px;
+            min-width: 42px;
+            border-radius: 10px;
+            background: var(--crimson-subtle);
+            color: var(--crimson);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .receive-card-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .receive-card-content p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: var(--text-dark-muted);
+            line-height: 1.4;
+        }
+
+        /* 3 — BENEFÍCIOS (PRETO) */
+        .benefit-card {
+            background: var(--bg-dark-card);
+            border: 1px solid var(--border-dark);
+            border-radius: var(--radius-md);
+            padding: 18px 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 12px;
+            text-align: left;
+            box-shadow: var(--shadow-dark);
+        }
+
+        .benefit-icon {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 10px;
+            background: rgba(175, 19, 6, 0.2);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .benefit-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-white);
+            margin-bottom: 4px;
+        }
+
+        .benefit-content p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: var(--text-light-muted);
+            line-height: 1.4;
+        }
+
+        /* 4 — BÔNUS (BRANCO) */
+        .bonus-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .bonus-card-item {
+            background: var(--bg-light-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 20px 16px;
+            box-shadow: var(--shadow-card);
+            text-align: center;
+        }
+
+        .bonus-mockup {
+            width: 100%;
+            max-width: 180px;
+            margin: 0 auto 12px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: transparent;
+        }
+
+        .bonus-mockup img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .bonus-badge {
+            display: inline-block;
+            background: var(--crimson);
+            color: #FFFFFF;
+            font-size: 0.72rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        .bonus-card-item h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .bonus-card-item p {
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            color: var(--text-dark-muted);
+        }
+
+        .bonus-price-box {
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .bonus-price-old {
+            text-decoration: line-through;
+            color: #888888;
+            margin-right: 6px;
+        }
+
+        .bonus-price-free {
+            color: var(--cta-green);
+            font-weight: 900;
+        }
+
+        /* 5 — PROVA SOCIAL (PRETO - CARROSSEL EM LOOPING CONTÍNUO COMPACTO) */
+        .proof-carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 14px;
+            padding: 10px 0 16px;
+        }
+
+        .proof-carousel-track {
+            display: flex;
+            gap: 12px;
+            width: max-content;
+            will-change: transform;
+        }
+
+        .proof-slide-item {
+            flex: 0 0 200px;
+            max-width: 200px;
+            border-radius: var(--radius-md);
+            background: #111116;
+            overflow: hidden;
+            box-shadow: var(--shadow-dark);
+            border: 1px solid var(--border-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .proof-slide-item img {
+            width: 100%;
+            height: auto;
+            object-fit: contain !important;
+            display: block;
+        }
+
+        /* 6 — OFERTA (BRANCO) */
+        .timer-box {
+            background: #121218;
+            border: 1px solid rgba(175, 19, 6, 0.4);
+            border-radius: var(--radius-md);
+            padding: 12px 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .timer-label {
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+
+        .countdown {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #FFFFFF;
+        }
+
+        .plans-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .plan-card {
+            background: var(--bg-light-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 22px 18px;
+            box-shadow: var(--shadow-card);
+            text-align: center;
+            position: relative;
+        }
+
+        .plan-card.highlight {
+            border: 2px solid var(--crimson);
+            box-shadow: 0 16px 40px rgba(175, 19, 6, 0.16);
+            background: radial-gradient(circle at top right, rgba(175, 19, 6, 0.06), transparent 50%), #FFFFFF;
+        }
+
+        .plan-ribbon {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--crimson);
+            color: #FFFFFF;
+            font-size: 0.7rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 5px 14px;
+            border-radius: 999px;
+            white-space: nowrap;
+        }
+
+        .plan-card h3 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            margin-top: 4px;
+            margin-bottom: 3px;
+        }
+
+        .plan-desc {
+            font-size: 0.82rem;
+            color: var(--text-dark-muted);
+            margin-bottom: 14px;
+        }
+
+        .plan-mockup-offer {
+            width: 100%;
+            max-width: 220px;
+            margin: 0 auto 14px;
+        }
+
+        .plan-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .plan-features li {
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            padding: 7px 0;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+
+        .price-current {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.7rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1;
+            margin: 4px 0 2px;
+        }
+
+        .plan-card.highlight .price-current {
+            color: var(--crimson);
+        }
+
+        .price-single-tag {
+            font-size: 0.75rem;
+            color: var(--text-dark-muted);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .btn-basico-trigger {
+            background: #27272A !important;
+            box-shadow: none !important;
+            color: #FFFFFF !important;
+            font-size: 0.88rem !important;
+        }
+
+        /* 7 — GARANTIA (PRETO) */
+        .warranty-card {
+            background: var(--bg-dark-card);
+            border: 1px solid var(--border-dark);
+            border-radius: var(--radius-lg);
+            padding: 26px 18px;
+            text-align: center;
+            box-shadow: var(--shadow-dark);
+        }
+
+        .warranty-icon {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 12px;
+            color: var(--gold);
+        }
+
+        /* 8 — FAQ (BRANCO) */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .faq-item {
+            background: var(--bg-light-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 15px 38px 15px 16px;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            color: var(--crimson);
+            font-weight: 800;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "−";
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 16px 16px;
+            font-size: 0.84rem;
+            color: var(--text-dark-muted);
+            line-height: 1.45;
+            text-align: left;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* 9 — RODAPÉ (PRETO) */
+        .footer-section {
+            background: #000000;
+            color: #71717A;
+            font-size: 0.72rem;
+            text-align: center;
+            padding: 28px 20px 38px;
+            border-top: 1px solid #141416;
+        }
+
+        .footer-links {
+            margin: 10px 0 14px;
+            font-weight: 600;
+            color: #A1A1AA;
+        }
+
+        .footer-disclaimer {
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .footer-copyright {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+
+        /* MODAL DE UPGRADE DO PLANO BÁSICO COM LINK B (R$ 9,90) */
+        .modal-backdrop {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .modal-backdrop.active {
+            display: flex;
+        }
+
+        .modal-card {
+            background: #0D0D12;
+            border: 2px solid var(--crimson);
+            border-radius: var(--radius-lg);
+            padding: 24px 18px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 0 50px rgba(175, 19, 6, 0.35);
+            animation: modalIn 0.3s ease-out forwards;
+        }
+
+        @keyframes modalIn {
+            from { opacity: 0; transform: scale(0.92); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            background: transparent;
+            border: 0;
+            font-size: 22px;
+            color: #71717A;
+            cursor: pointer;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- TOP ALERT -->
+        <header class="top-banner">
+            🔥 MANUAL DO CONQUISTADOR — ACESSO IMEDIATO
+        </header>
+
+        <main>
+            <!-- 1 — HERO (PRETO) -->
+            <section class="section section-dark hero-section" id="hero">
+                <span class="eyebrow">🔥 MANUAL DO CONQUISTADOR</span>
+                <h1>Ela respondeu.<br>E agora?</h1>
+                <div class="hero-subtitle-lead">165 MENSAGENS PARA SABER O QUE MANDAR EM CADA SITUAÇÃO</div>
+                <p class="hero-lead">Tenha mensagens prontas para puxar assunto, responder sem parecer desesperado, manter o interesse e conduzir a conversa para um encontro.</p>
+
+                <!-- MOCKUP COM CATEGORIAS DO SMARTPHONE -->
+                <div class="hero-image-loop-container">
+                    <img src="https://digmax.com.br/wp-content/uploads/2025/05/Hitched-by-Lauren-Biel-_-Read-your-next-hitch-hiker-dark-romance-book-here-Summer-reading-aesthetic-683x1024.jpeg" class="hero-slide active" alt="Manual do Conquistador">
+                    <img src="https://digmax.com.br/wp-content/uploads/2025/09/Carrosel-4-Dominando.jpg" class="hero-slide" alt="Mensagens Prontas">
+                    <img src="https://digmax.com.br/wp-content/uploads/2025/09/Carrosel-3-Amor-Maquiavelico.jpg" class="hero-slide" alt="Atração Natural">
+                </div>
+
+                <div class="hero-checklist">
+                    <div><span>✓</span> Acesso digital</div>
+                    <div><span>✓</span> Consulte pelo celular</div>
+                    <div><span>✓</span> Mensagens por situação</div>
+                </div>
+            </section>
+
+            <!-- 2 — O QUE VOCÊ VAI RECEBER (BRANCO) -->
+            <section class="section section-light" id="o-que-recebe">
+                <div class="center">
+                    <span class="eyebrow">📲 165 MENSAGENS PRONTAS</span>
+                    <h2>Tenha Uma Resposta Para Cada Momento da Conversa</h2>
+                    <p>Em vez de ficar olhando para a tela sem saber o que mandar, consulte a situação em que você está e encontre ideias de mensagens para adaptar e enviar:</p>
+                </div>
+
+                <!-- IMAGEM DO MATERIAL NO TOPO -->
+                <div class="section-visual-clean">
+                    <img src="https://digmax.com.br/wp-content/uploads/2025/09/TITULO-DO-PRODUTO-AQUI-2-2-1024x768.png" alt="Material Digital por Dentro no Smartphone" loading="lazy" decoding="async">
+                </div>
+
+                <div class="receive-grid">
+                    <div class="receive-card">
+                        <div class="icon-box">💬</div>
+                        <div class="receive-card-content">
+                            <h3>Para Começar a Conversa</h3>
+                            <p>Mensagens para puxar assunto sem depender sempre do mesmo “oi, tudo bem?”.</p>
+                        </div>
+                    </div>
+
+                    <div class="receive-card">
+                        <div class="icon-box">👀</div>
+                        <div class="receive-card-content">
+                            <h3>Quando Ela Responde Seco ou Demora</h3>
+                            <p>Opções para continuar a conversa sem ficar insistindo ou demonstrando desespero.</p>
+                        </div>
+                    </div>
+
+                    <div class="receive-card">
+                        <div class="icon-box">🔥</div>
+                        <div class="receive-card-content">
+                            <h3>Para Criar Mais Interesse</h3>
+                            <p>Mensagens para deixar a conversa menos previsível, mais interessante e envolvente.</p>
+                        </div>
+                    </div>
+
+                    <div class="receive-card">
+                        <div class="icon-box">📅</div>
+                        <div class="receive-card-content">
+                            <h3>Para Chamar Para Sair</h3>
+                            <p>Sugestões para avançar a conversa e fazer um convite sem ficar semanas preso no WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 — BENEFÍCIOS (PRETO) -->
+            <section class="section section-dark" id="beneficios">
+                <div class="center">
+                    <span class="eyebrow">⚡ MAIS CLAREZA NA CONVERSA</span>
+                    <h2>Pare de Pensar Demais Antes de Mandar Uma Mensagem</h2>
+                    <p>Converse com mais fluidez, segurança e intenção clara:</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <div class="benefit-content">
+                        <h3>Pare de Travar Sem Saber o Que Mandar</h3>
+                        <p>Tenha opções prontas para diferentes momentos da conversa e escolha a que mais combina com a situação.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <div class="benefit-content">
+                        <h3>Evite Conversas Que Morrem Rápido</h3>
+                        <p>Tenha mais ideias para responder, puxar novos assuntos e evitar aquele silêncio desconfortável.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📅</div>
+                    <div class="benefit-content">
+                        <h3>Saiba Como Avançar Para Um Encontro</h3>
+                        <p>Pare de conversar por semanas sem saber como sair do WhatsApp e levar a interação para o próximo passo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4 — BÔNUS DO PLANO COMPLETO (BRANCO) -->
+            <section class="section section-light" id="bonus">
+                <div class="center">
+                    <span class="eyebrow">🎁 EXCLUSIVO NO PLANO COMPLETO</span>
+                    <h2>No Plano Completo Você Também Recebe 3 Bônus</h2>
+                    <p>Materiais extras para complementar as 165 mensagens e ajudar você em outras etapas da conversa:</p>
+                </div>
+
+                <div class="bonus-list">
+                    <div class="bonus-card-item">
+                        <div class="bonus-mockup">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/09/3-2.png" alt="Bônus 1 - Segredos da Atração">
+                        </div>
+                        <span class="bonus-badge">Bônus #1</span>
+                        <h3>Segredos da Atração</h3>
+                        <p>Princípios práticos para entender melhor atitudes que podem aumentar ou diminuir o interesse durante uma interação.</p>
+                        <div class="bonus-price-box">
+                            <span class="bonus-price-old">De <span class="money-convert" data-brl="47.00">R$ 47,00</span></span> por <span class="bonus-price-free">R$ 0,00</span>
+                        </div>
+                    </div>
+
+                    <div class="bonus-card-item">
+                        <div class="bonus-mockup">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/09/1-3.png" alt="Bônus 2 - O Rei do Flerte">
+                        </div>
+                        <span class="bonus-badge">Bônus #2</span>
+                        <h3>O Rei do Flerte</h3>
+                        <p>Ideias para deixar suas conversas mais leves, interessantes e menos previsíveis.</p>
+                        <div class="bonus-price-box">
+                            <span class="bonus-price-old">De <span class="money-convert" data-brl="37.00">R$ 37,00</span></span> por <span class="bonus-price-free">R$ 0,00</span>
+                        </div>
+                    </div>
+
+                    <div class="bonus-card-item">
+                        <div class="bonus-mockup">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/09/6-2.png" alt="Bônus 3 - Sistema Anti-Friendzone">
+                        </div>
+                        <span class="bonus-badge">Bônus #3</span>
+                        <h3>Sistema Anti-Friendzone</h3>
+                        <p>Um guia para identificar comportamentos que fazem a conversa ficar apenas na amizade e melhorar seu posicionamento.</p>
+                        <div class="bonus-price-box">
+                            <span class="bonus-price-old">De <span class="money-convert" data-brl="37.00">R$ 37,00</span></span> por <span class="bonus-price-free">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5 — PROVA SOCIAL (PRETO - CARROSSEL EM LOOPING CONTÍNUO COMPACTO) -->
+            <section class="section section-dark" id="depoimentos">
+                <div class="center">
+                    <span class="eyebrow">★★★★★ QUEM JÁ ACESSOU</span>
+                    <h2>Veja o Que Outros Homens Estão Dizendo</h2>
+                    <p>Relatos de clientes que acessaram o Manual do Conquistador e começaram a aplicar as mensagens nas próprias conversas:</p>
+                </div>
+
+                <div class="proof-carousel-container">
+                    <div class="proof-carousel-track" id="proofCarouselTrack">
+                        <div class="proof-slide-item">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/05/3-590x1024-1.png" alt="Depoimento 1" loading="lazy" decoding="async">
+                        </div>
+                        <div class="proof-slide-item">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/05/14.png.webp" alt="Depoimento 2" loading="lazy" decoding="async">
+                        </div>
+                        <div class="proof-slide-item">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/05/2-590x1024-1.png" alt="Depoimento 3" loading="lazy" decoding="async">
+                        </div>
+                        <div class="proof-slide-item">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/05/27-1.png.webp" alt="Depoimento 4" loading="lazy" decoding="async">
+                        </div>
+                        <div class="proof-slide-item">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/05/IMG_1069.jpg-768x1427.webp" alt="Depoimento 5" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6 — OFERTA (BRANCO) -->
+            <section class="section section-light" id="oferta">
+                <div class="center">
+                    <span class="eyebrow">🔥 OFERTA ESPECIAL</span>
+                    <h2>Escolha Seu Plano de Acesso</h2>
+                    <p>Os dois planos incluem as 165 mensagens. No Completo você recebe mais tempo de acesso + os 3 bônus exclusivos.</p>
+                </div>
+
+                <!-- Timer Integrado de 15 Minutos -->
+                <div class="timer-box">
+                    <div class="timer-label">⏰ O valor promocional expira em:</div>
+                    <div class="countdown" id="countdown-timer">15:00</div>
+                </div>
+
+                <div class="plans-container">
+                    <!-- PLANO BÁSICO -->
+                    <div class="plan-card">
+                        <h3>Plano Básico</h3>
+                        <p class="plan-desc">165 Mensagens do Manual do Conquistador</p>
+
+                        <ul class="plan-features">
+                            <li>✓ 165 mensagens prontas</li>
+                            <li>✓ Mensagens divididas por situações</li>
+                            <li>✓ Acesso pelo celular</li>
+                            <li>✓ Acesso por 3 meses</li>
+                            <li>✓ Garantia de 7 dias</li>
+                        </ul>
+
+                        <div class="price-current"><span class="money-convert" data-brl="5.90">R$ 5,90</span></div>
+                        <span class="price-single-tag">Pagamento único</span>
+
+                        <button type="button" onclick="openOfferModal()" class="btn-cta btn-basico-trigger">
+                            QUERO O PLANO BÁSICO
+                        </button>
+                    </div>
+
+                    <!-- PLANO COMPLETO PRO -->
+                    <div class="plan-card highlight">
+                        <div class="plan-ribbon">⭐ MELHOR ESCOLHA</div>
+
+                        <h3>Manual do Conquistador Completo</h3>
+                        <p class="plan-desc">165 Mensagens + 3 Bônus Exclusivos</p>
+
+                        <div class="plan-mockup-offer">
+                            <img src="https://digmax.com.br/wp-content/uploads/2025/09/TITULO-DO-PRODUTO-AQUI-2-2-1024x768.png" alt="Mockup Manual Completo" loading="lazy" decoding="async">
+                        </div>
+
+                        <ul class="plan-features">
+                            <li>✓ Todas as 165 mensagens</li>
+                            <li>✓ Mensagens divididas por situações</li>
+                            <li>✓ Segredos da Atração</li>
+                            <li>✓ O Rei do Flerte</li>
+                            <li>✓ Sistema Anti-Friendzone</li>
+                            <li>✓ Acesso por 1 ano</li>
+                            <li>✓ Garantia de 7 dias</li>
+                        </ul>
+
+                        <div class="price-current"><span class="money-convert" data-brl="14.90">R$ 14,90</span></div>
+                        <span class="price-single-tag">Pagamento único</span>
+
+                        <!-- LINK A: CHECKOUT R$ 14,90 -->
+                        <a href="https://www.ggcheckout.com/checkout/v5/HpiBUF3jNu1BGkRme1ql" class="btn-cta" id="btn-checkout-pro-14">
+                            QUERO O PLANO COMPLETO
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7 — GARANTIA (PRETO) -->
+            <section class="section section-dark" id="garantia">
+                <div class="warranty-card">
+                    <svg class="warranty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    <span class="eyebrow">🛡️ RISCO ZERO</span>
+                    <h2>Você Tem 7 Dias Para Conhecer o Material</h2>
+                    <p>Acesse o Manual do Conquistador, veja as mensagens e explore o conteúdo com calma. Se dentro de 7 dias você sentir que o produto não é para você, basta solicitar o reembolso. Você recebe 100% do valor pago de volta. Sem burocracia.</p>
+                </div>
+            </section>
+
+            <!-- 8 — FAQ (BRANCO) -->
+            <section class="section section-light" id="faq">
+                <div class="center">
+                    <span class="eyebrow">❓ DÚVIDAS FREQUENTES</span>
+                    <h2>Perguntas Frequentes</h2>
+                </div>
+
+                <div class="faq-list">
+                    <article class="faq-item active">
+                        <button class="faq-question" type="button">Como recebo o Manual do Conquistador?</button>
+                        <div class="faq-answer">
+                            <p>Após a confirmação do pagamento, você recebe o acesso digital ao conteúdo diretamente no seu e-mail.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">Consigo acessar pelo celular?</button>
+                        <div class="faq-answer">
+                            <p>Sim. O material pode ser consultado pelo celular, tablet ou computador.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">As mensagens já vêm prontas?</button>
+                        <div class="faq-answer">
+                            <p>Sim. Você recebe 165 sugestões organizadas por diferentes situações para consultar, adaptar ao seu jeito e utilizar nas suas conversas.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">Preciso ter experiência com mulheres ou relacionamentos?</button>
+                        <div class="faq-answer">
+                            <p>Não. O material foi organizado justamente para quem costuma ficar em dúvida sobre o que escrever ou como continuar uma conversa.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">Quanto tempo tenho de acesso?</button>
+                        <div class="faq-answer">
+                            <p>No Plano Básico você recebe 3 meses de acesso. No Plano Completo você recebe 1 ano de acesso.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">E se eu não gostar?</button>
+                        <div class="faq-answer">
+                            <p>Você possui uma garantia de 7 dias. Dentro desse período, pode solicitar o reembolso conforme as condições da garantia.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- 9 — RODAPÉ (PRETO) -->
+        <footer class="footer-section">
+            <p class="footer-copyright">© 2026 Manual do Conquistador. Todos os direitos reservados.</p>
+            <div class="footer-links">Termos de Uso | Política de Privacidade | Suporte</div>
+            <p class="footer-disclaimer">
+                Este produto possui caráter educacional. Resultados e experiências podem variar de pessoa para pessoa.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- MODAL DE UPGRADE DO PLANO BÁSICO COM LINK B (R$ 9,90) -->
+    <div class="modal-backdrop" id="offerModal">
+        <div class="modal-card">
+            <button type="button" class="modal-close" onclick="closeOfferModal()">✕</button>
+
+            <div style="display:inline-block; background:var(--crimson); color:#fff; font-size:0.72rem; font-weight:900; padding:4px 10px; border-radius:6px; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:10px;">
+                🔥 OPORTUNIDADE ESPECIAL
+            </div>
+
+            <h3 style="font-size:1.35rem; margin-bottom:6px; line-height:1.2; text-transform:uppercase; color:#FFFFFF;">
+                ESPERE!<br>LEVE O COMPLETO POR APENAS +R$4
+            </h3>
+
+            <p style="font-size:0.86rem; margin-bottom:14px; color:var(--text-light-muted);">
+                Você escolheu o Básico por <strong>R$ 5,90</strong>.<br>
+                Por uma diferença de apenas R$4, libere agora 1 ano de acesso + os 3 bônus exclusivos:
+            </p>
+
+            <div style="background:#050508; border:2px dashed var(--crimson); border-radius:14px; padding:12px; margin-bottom:14px;">
+                <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin:4px 0;">
+                    <span style="text-decoration:line-through; color:#71717A; font-size:0.95rem;">De R$ 14,90</span>
+                    <strong style="font-size:2.2rem; font-family:'Oswald', sans-serif; color:var(--gold);">R$ 9,90</strong>
+                </div>
+
+                <span style="font-size:0.75rem; color:var(--gold); font-weight:800; text-transform:uppercase; display:block; margin-bottom:8px;">
+                    ⭐ SÓ +R$4 EM RELAÇÃO AO BÁSICO
+                </span>
+
+                <div style="text-align:left; font-size:0.82rem; color:var(--text-white); font-weight:700; line-height:1.6; max-width:230px; margin:0 auto;">
+                    <div>✓ 165 mensagens</div>
+                    <div>✓ 1 ano de acesso</div>
+                    <div>✓ 3 bônus exclusivos</div>
+                    <div>✓ Garantia de 7 dias</div>
+                </div>
+            </div>
+
+            <div style="display:grid; gap:8px;">
+                <!-- LINK B: CHECKOUT PRO DESCONTO R$ 9,90 -->
+                <a href="https://digmax.mycartpanda.com/checkout/172643684:1" class="btn-cta" id="btn-modal-checkout-promo" style="min-height:48px; padding:12px; font-size:0.88rem;">
+                    SIM, QUERO O COMPLETO POR R$ 9,90
+                </a>
+
+                <!-- LINK BÁSICO: CHECKOUT BÁSICO R$ 5,90 -->
+                <a href="https://digmax.br/manualdoconquistadorupgrade" onclick="closeOfferModal()" style="font-size:0.8rem; color:#A1A1AA; text-decoration:underline; font-weight:700; display:block; padding:4px;">
+                    Não, quero apenas o Básico por R$ 5,90
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS DINÂMICOS & UTMIFY -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+    <script>
+        // 1. CARROSSEL HERO (1.5s)
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll(".hero-slide");
+            let currentIndex = 0;
+
+            if (slides.length > 0) {
+                setInterval(() => {
+                    slides[currentIndex].classList.remove("active");
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    slides[currentIndex].classList.add("active");
+                }, 1500);
+            }
+
+            // 2. CARROSSEL AUTOMÁTICO EM LOOP INFINITO (PROVA SOCIAL)
+            function initAutoProofCarousel() {
+                const track = document.getElementById('proofCarouselTrack');
+                if (!track) return;
+
+                const slides = Array.from(track.children);
+                slides.forEach(slide => {
+                    const clone = slide.cloneNode(true);
+                    track.appendChild(clone);
+                });
+
+                let scrollPos = 0;
+                const speed = 0.75;
+                const singleSetWidth = slides.length * (200 + 12);
+
+                function animate() {
+                    scrollPos += speed;
+                    if (scrollPos >= singleSetWidth) {
+                        scrollPos = 0;
+                    }
+                    track.style.transform = `translateX(-${scrollPos}px)`;
+                    requestAnimationFrame(animate);
+                }
+                requestAnimationFrame(animate);
+            }
+            initAutoProofCarousel();
+
+            // 3. TEMPORIZADOR REGRESSIVO 15 MINUTOS
+            let timeInSeconds = 15 * 60;
+            const timerElement = document.getElementById("countdown-timer");
+
+            setInterval(() => {
+                let minutes = Math.floor(timeInSeconds / 60);
+                let seconds = timeInSeconds % 60;
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                if (timerElement) {
+                    timerElement.textContent = `${minutes}:${seconds}`;
+                }
+
+                if (timeInSeconds <= 0) {
+                    timeInSeconds = 15 * 60;
+                } else {
+                    timeInSeconds--;
+                }
+            }, 1000);
+
+            // 4. ACCORDION FAQ
+            const faqQuestions = document.querySelectorAll(".faq-question");
+            faqQuestions.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const item = btn.parentElement;
+                    const isActive = item.classList.contains("active");
+
+                    document.querySelectorAll(".faq-item").forEach(i => i.classList.remove("active"));
+                    if (!isActive) {
+                        item.classList.add("active");
+                    }
+                });
+            });
+
+            // 5. CONVERSOR AUTOMÁTICO DE MOEDA (GEO IP)
+            const exchangeRates = {
+                "USD": { rate: 0.18, symbol: "$", code: "USD" },
+                "EUR": { rate: 0.16, symbol: "€", code: "EUR" },
+                "GBP": { rate: 0.14, symbol: "£", code: "GBP" },
+                "BRL": { rate: 1.00, symbol: "R$", code: "BRL" },
+                "MXN": { rate: 3.40, symbol: "$", code: "MXN" },
+                "ARS": { rate: 190.0, symbol: "$", code: "ARS" },
+                "CLP": { rate: 170.0, symbol: "$", code: "CLP" },
+                "COP": { rate: 750.0, symbol: "$", code: "COP" }
+            };
+
+            const countryToCurrency = {
+                "BR": "BRL", "US": "USD", "PT": "EUR", "ES": "EUR", "FR": "EUR", "IT": "EUR",
+                "DE": "EUR", "GB": "GBP", "MX": "MXN", "AR": "ARS", "CL": "CLP", "CO": "COP"
+            };
+
+            function convertPrices(currencyCode) {
+                const target = exchangeRates[currencyCode] || exchangeRates["USD"];
+                const priceElements = document.querySelectorAll(".money-convert");
+
+                priceElements.forEach(el => {
+                    const valBrl = parseFloat(el.getAttribute("data-brl"));
+                    if (!isNaN(valBrl)) {
+                        const converted = (valBrl * target.rate).toFixed(2);
+                        if (target.code === "BRL") {
+                            el.textContent = `R$ ${valBrl.toFixed(2).replace(".", ",")}`;
+                        } else {
+                            el.textContent = `${target.symbol} ${converted} ${target.code}`;
+                        }
+                    }
+                });
+            }
+
+            fetch("https://ipapi.co/json/")
+                .then(res => res.json())
+                .then(data => {
+                    const userCountry = data.country_code || "BR";
+                    const detectedCurrency = countryToCurrency[userCountry] || (data.currency && exchangeRates[data.currency] ? data.currency : "BRL");
+                    convertPrices(detectedCurrency);
+                })
+                .catch(() => {
+                    convertPrices("BRL");
+                });
+        });
+
+        // 6. CONTROLE DO MODAL DE UPGRADE
+        function openOfferModal() {
+            document.getElementById('offerModal').classList.add('active');
+        }
+
+        function closeOfferModal() {
+            document.getElementById('offerModal').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
