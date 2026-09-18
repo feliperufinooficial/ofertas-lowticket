@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Café con Jesús | Devocional para Imprimir</title>
+    <meta name="description" content="La caja devocional que convierte tu café de la mañana en un ritual de fe — lista para imprimir, armar y usar hoy mismo.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="assets/hero-page-1.jpg" fetchpriority="high">
+
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids data-utmify-ignore-iframe data-utmify-is-cartpanda async></script>
+    <script>
+        window.pixelId = "SEU_PIXEL_ID_AQUI";
+        (function() {
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+        })();
+    </script>
+
+    <style>
+        :root {
+            --sage: #718355;
+            --sage-dark: #5E6F43;
+            --sand: #F4EFE6;
+            --sand-card: #EBE4D8;
+            --bg-app: #FCF9F5;
+            --gold: #D6A354;
+            --dark: #2C2520;
+            --dark-2: #1F1915;
+            --heading-dark: #4B3F35;
+            --cta-green: #19C44A;
+            --cta-green-hover: #0FA83A;
+            --text-muted: #7A6F63;
+            --radius-lg: 20px;
+            --radius-md: 14px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; background-color: #1A1512; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1A1512;
+            display: flex;
+            justify-content: center;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--bg-app);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+        }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        .section { padding: 40px 20px; }
+        .section-sand { background-color: var(--sand); }
+        .section-light { background-color: var(--bg-app); }
+        .section-dark { background-color: var(--dark-2); color: #FFFFFF; }
+        .center { text-align: center; }
+
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 6px;
+            font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;
+            color: var(--sage-dark); background: rgba(113, 131, 85, 0.12);
+            padding: 6px 14px; border-radius: 999px; margin-bottom: 12px;
+        }
+
+        h1, h2, h3 { font-weight: 800; line-height: 1.2; color: var(--heading-dark); margin-bottom: 12px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2rem; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; }
+        h3 { font-size: 1rem; }
+        p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 14px; }
+
+        .btn-cta {
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            width: 100%; min-height: 54px; padding: 15px 20px;
+            background: var(--cta-green); color: #FFFFFF !important;
+            font-weight: 900; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em;
+            border-radius: 999px; border: none; box-shadow: 0 12px 26px rgba(25, 196, 74, 0.32);
+            cursor: pointer; transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn-cta:hover { background: var(--cta-green-hover); transform: translateY(-2px); }
+        .btn-basic { background: var(--dark) !important; box-shadow: none !important; }
+
+        /* 0 — TOP BANNER */
+        .top-banner {
+            background: var(--sage); color: #FFFFFF; font-size: 0.76rem; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 0.05em; text-align: center; padding: 11px 14px;
+        }
+
+        /* 1 — HERO: carrossel infinito via @keyframes, sem JS */
+        .hero-section { padding: 32px 0 30px; text-align: center; }
+        .hero-lead { font-size: 0.95rem; margin-bottom: 20px; padding: 0 20px; }
+        .hero-eyebrow-wrap, .hero-text-wrap { padding: 0 20px; }
+
+        .hero-carousel-viewport { width: 100%; overflow: hidden; padding: 6px 0; }
+        .hero-carousel-track {
+            display: flex; gap: 12px; width: max-content;
+            animation: scrollHero 34s linear infinite;
+        }
+        .hero-carousel-track img {
+            flex: 0 0 190px; width: 190px; aspect-ratio: 3/4; object-fit: cover;
+            border-radius: var(--radius-md); box-shadow: 0 10px 24px rgba(44,37,32,0.22);
+        }
+        @keyframes scrollHero {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .proof-pill {
+            display: inline-block; background: var(--sand-card); color: var(--heading-dark);
+            font-size: 0.78rem; font-weight: 700; padding: 7px 16px; border-radius: 999px; margin-top: 16px;
+        }
+
+        /* 2 — PARA QUIÉN ES */
+        .persona-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+        .persona-card {
+            display: flex; align-items: flex-start; gap: 14px; text-align: left;
+            background: #FFFFFF; border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius-md);
+            padding: 16px;
+        }
+        .persona-icon {
+            flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%;
+            background: rgba(113,131,85,0.14); display: flex; align-items: center; justify-content: center;
+        }
+        .persona-icon svg { width: 20px; height: 20px; color: var(--sage-dark); }
+        .persona-card h3 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 4px; }
+        .persona-card p { font-size: 0.82rem; margin-bottom: 0; }
+
+        /* 3 — LO QUE VAS A RECIBIR */
+        .receive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+        .receive-card {
+            background: #FFFFFF; border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius-md);
+            padding: 16px 12px; text-align: center;
+        }
+        .receive-icon { font-size: 1.4rem; margin-bottom: 8px; }
+        .receive-card h3 { font-size: 0.82rem; margin-bottom: 4px; }
+        .receive-card p { font-size: 0.76rem; margin-bottom: 0; }
+
+        /* 4 — CÓMO FUNCIONA (fichas 2x2) */
+        .sheet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+        .sheet-card-square {
+            background: #FFFFFF; border-radius: var(--radius-md); overflow: hidden;
+            box-shadow: 0 6px 16px rgba(44,37,32,0.08); position: relative;
+        }
+        .sheet-card-square img { aspect-ratio: 1/1; object-fit: cover; }
+        .sheet-num {
+            position: absolute; top: 8px; left: 8px; width: 26px; height: 26px; border-radius: 50%;
+            background: var(--sage); color: #fff; font-weight: 800; font-size: 0.8rem;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .sheet-label { padding: 8px 10px; font-size: 0.78rem; font-weight: 700; color: var(--heading-dark); }
+
+        /* 5 — BONOS */
+        .bonus-list { display: flex; flex-direction: column; gap: 18px; margin-top: 20px; }
+        .bonus-card-item {
+            background: #FFFFFF; border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius-lg);
+            padding: 20px 16px; text-align: center; box-shadow: 0 8px 20px rgba(44,37,32,0.06);
+        }
+        .bonus-mockup { width: 100%; max-width: 190px; margin: 0 auto 12px; border-radius: var(--radius-md); overflow: hidden; }
+        .bonus-mockup img { aspect-ratio: 3/4; object-fit: cover; }
+        .bonus-badge {
+            display: inline-block; background: var(--sage); color: #fff; font-size: 0.7rem; font-weight: 900;
+            text-transform: uppercase; padding: 4px 10px; border-radius: 6px; margin-bottom: 8px;
+        }
+        .bonus-card-item h3 { font-size: 1rem; margin-bottom: 6px; }
+        .bonus-price-box { font-size: 0.85rem; font-weight: 700; color: var(--heading-dark); }
+        .bonus-price-old { text-decoration: line-through; color: #A79D8F; margin-right: 6px; }
+        .bonus-price-free { color: var(--cta-green); font-weight: 900; }
+
+        /* 6 — OFERTA + GARANTIA */
+        .plans-container { display: flex; flex-direction: column; gap: 18px; margin-top: 20px; }
+        .plan-card {
+            background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); border-radius: var(--radius-lg);
+            padding: 22px 18px; text-align: center; position: relative;
+        }
+        .plan-card.highlight { border: 2px solid var(--sage); box-shadow: 0 16px 36px rgba(113,131,85,0.18); }
+        .plan-ribbon {
+            position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+            background: var(--sage); color: #fff; font-size: 0.68rem; font-weight: 900; text-transform: uppercase;
+            letter-spacing: 0.05em; padding: 5px 14px; border-radius: 999px; white-space: nowrap;
+        }
+        .plan-card h3 { font-size: 1.15rem; margin-top: 4px; margin-bottom: 2px; }
+        .plan-desc { font-size: 0.8rem; margin-bottom: 12px; }
+        .plan-mockup { width: 100%; max-width: 200px; margin: 0 auto 14px; }
+        .plan-features { list-style: none; text-align: left; margin-bottom: 18px; }
+        .plan-features li {
+            font-size: 0.85rem; font-weight: 600; color: var(--heading-dark); padding: 7px 0;
+            border-bottom: 1px dashed rgba(0,0,0,0.08); display: flex; align-items: flex-start; gap: 8px;
+        }
+        .plan-features li:last-child { border-bottom: none; }
+        .price-current { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 800; color: var(--heading-dark); margin: 4px 0 2px; }
+        .plan-card.highlight .price-current { color: var(--sage-dark); }
+        .price-old-tag { font-size: 0.78rem; color: #A79D8F; text-decoration: line-through; display: block; margin-bottom: 2px; }
+        .price-single-tag { font-size: 0.72rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 16px; display: block; }
+
+        .warranty-card {
+            background: var(--dark-2); color: #EDE7DC; border-radius: var(--radius-lg);
+            padding: 24px 20px; text-align: center; margin-top: 20px;
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+        }
+        .warranty-icon { width: 42px; height: 42px; color: var(--gold); }
+        .warranty-card h3 { color: #FFFFFF; font-size: 1rem; margin-bottom: 4px; }
+        .warranty-card p { color: #C9C1B4; font-size: 0.82rem; margin-bottom: 0; }
+
+        /* POPUP MODAL */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(20,16,13,0.72);
+            display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 999;
+        }
+        .modal-overlay[hidden] { display: none !important; }
+        .modal-box {
+            background: #FFFFFF; border-radius: var(--radius-lg); width: 100%; max-width: 340px;
+            max-height: 92vh; overflow-y: auto; padding: 22px 18px; position: relative; text-align: center;
+        }
+        .modal-close {
+            position: absolute; top: 10px; right: 12px; background: none; border: none;
+            font-size: 1.3rem; color: var(--text-muted); cursor: pointer; line-height: 1;
+        }
+        .modal-badge {
+            display: inline-block; background: var(--gold); color: #2C2520; font-size: 0.68rem; font-weight: 900;
+            text-transform: uppercase; letter-spacing: 0.05em; padding: 5px 12px; border-radius: 999px; margin-bottom: 12px;
+        }
+        .modal-box h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 10px; }
+        .modal-features { list-style: none; text-align: left; margin: 0 0 16px; }
+        .modal-features li {
+            font-size: 0.83rem; font-weight: 600; color: var(--heading-dark); padding: 6px 0;
+            display: flex; align-items: flex-start; gap: 8px;
+        }
+        .modal-price { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 800; color: var(--sage-dark); margin-bottom: 4px; }
+        .modal-decline { display: block; margin-top: 14px; font-size: 0.78rem; color: var(--text-muted); text-decoration: underline; }
+
+        /* 7 — FAQ + CIERRE */
+        .faq-list { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; }
+        .faq-item { background: #FFFFFF; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 4px 12px rgba(44,37,32,0.05); }
+        .faq-question {
+            width: 100%; background: transparent; border: none; padding: 15px 38px 15px 16px; text-align: left;
+            font-family: 'Montserrat', sans-serif; font-size: 0.87rem; font-weight: 800; color: var(--heading-dark);
+            cursor: pointer; position: relative;
+        }
+        .faq-question::after {
+            content: "+"; position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+            font-size: 1.2rem; color: var(--sage); font-weight: 800;
+        }
+        .faq-item.active .faq-question::after { content: "−"; }
+        .faq-answer { display: none; padding: 0 16px 16px; font-size: 0.83rem; color: var(--text-muted); text-align: left; }
+        .faq-item.active .faq-answer { display: block; }
+
+        .final-cta-box {
+            background: var(--sand); border-radius: var(--radius-lg); padding: 30px 22px;
+            text-align: center; margin-top: 30px;
+        }
+        .final-cta-box h2 { margin-bottom: 16px; }
+
+        /* 8 — RODAPÉ */
+        .footer-section { background: var(--dark-2); color: #8A8175; font-size: 0.72rem; text-align: center; padding: 28px 20px 36px; }
+        .footer-copyright { color: #FFFFFF; font-weight: 700; font-size: 0.75rem; margin-bottom: 8px; }
+        .footer-links { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+
+        <header class="top-banner">⚡ ACCESO INMEDIATO: EMPIEZA HOY ⏳ CAJA CAFÉ CON JESÚS</header>
+
+        <main>
+            <!-- 1 — HERO -->
+            <section class="hero-section" id="hero">
+                <div class="hero-eyebrow-wrap"><span class="eyebrow">🙏 CAJA DEVOCIONAL</span></div>
+                <div class="hero-text-wrap">
+                    <h1>Empieza Cada Mañana con una Palabra de Dios en tus Manos</h1>
+                    <p class="hero-lead">Una caja que convierte tu café de la mañana en un ritual de fe, sin esfuerzo.</p>
+                </div>
+
+                <div class="hero-carousel-viewport">
+                    <div class="hero-carousel-track">
+                        <img src="assets/hero-page-1.jpg" alt="Caja Café con Jesús - portada" loading="eager" fetchpriority="high">
+                        <img src="assets/hero-page-2.jpg" alt="Página del devocional 1" loading="lazy">
+                        <img src="assets/hero-page-3.jpg" alt="Página del devocional 2" loading="lazy">
+                        <img src="assets/hero-page-4.jpg" alt="Página del devocional 3" loading="lazy">
+                        <img src="assets/hero-page-5.jpg" alt="Página del devocional 4" loading="lazy">
+                        <img src="assets/hero-page-6.jpg" alt="Página del devocional 5" loading="lazy">
+                        <img src="assets/hero-page-7.jpg" alt="Página del devocional 6" loading="lazy">
+                        <img src="assets/hero-page-8.jpg" alt="Página del devocional 7" loading="lazy">
+                        <img src="assets/hero-page-9.jpg" alt="Página del devocional 8" loading="lazy">
+                        <img src="assets/hero-page-10.jpg" alt="Página del devocional 9" loading="lazy">
+                        <!-- duplicado para o loop infinito -->
+                        <img src="assets/hero-page-1.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-2.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-3.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-4.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-5.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-6.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-7.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-8.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-9.jpg" alt="" aria-hidden="true" loading="lazy">
+                        <img src="assets/hero-page-10.jpg" alt="" aria-hidden="true" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="hero-text-wrap"><span class="proof-pill">✅ Hecho Para Principiantes</span></div>
+            </section>
+
+            <!-- 2 — ¿PARA QUIÉN ES? -->
+            <section class="section section-sand" id="para-quien">
+                <h2>¿Para Quién Es?</h2>
+                <div class="persona-list">
+                    <div class="persona-card">
+                        <div class="persona-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></div>
+                        <div><h3>SI TUS MAÑANAS SON UN CAOS</h3><p>Y sientes que nunca encuentras 5 minutos tranquilos solo para ti antes de que empiece el día.</p></div>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+                        <div><h3>SI YA INTENTASTE UN DEVOCIONAL ANTES</h3><p>Y no lograste mantener la constancia porque el material era complicado o aburrido.</p></div>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg></div>
+                        <div><h3>SI EL CELULAR TE ROBA LA CALMA</h3><p>Y abres el scroll antes de orar, dejando la fe siempre para "después".</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 — LO QUE VAS A RECIBIR -->
+            <section class="section section-light" id="que-recibes">
+                <div class="center">
+                    <span class="eyebrow">📦 TODO ORGANIZADO</span>
+                    <h2>Lo Que Vas a Recibir</h2>
+                </div>
+                <div class="receive-grid">
+                    <div class="receive-card">
+                        <div class="receive-icon">📖</div>
+                        <h3>100+ Mensajes Bíblicos</h3>
+                        <p>Una tarjeta con palabra de Dios para cada día del año.</p>
+                    </div>
+                    <div class="receive-card">
+                        <div class="receive-icon">📐</div>
+                        <h3>Molde de la Caja</h3>
+                        <p>Listo para imprimir y armar, sin complicaciones.</p>
+                    </div>
+                    <div class="receive-card">
+                        <div class="receive-icon">📋</div>
+                        <h3>Guía Paso a Paso</h3>
+                        <p>Cómo armar y usar tu caja cada mañana.</p>
+                    </div>
+                    <div class="receive-card">
+                        <div class="receive-icon">📲</div>
+                        <h3>Entrega por WhatsApp</h3>
+                        <p>Descarga inmediata en PDF, a cualquier hora.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4 — CÓMO FUNCIONA EN LA PRÁCTICA -->
+            <section class="section section-sand" id="como-funciona">
+                <div class="center">
+                    <span class="eyebrow">📖 PASO A PASO</span>
+                    <h2>Cómo Funciona en la Práctica</h2>
+                </div>
+                <div class="sheet-grid">
+                    <div class="sheet-card-square">
+                        <div style="position:relative;"><span class="sheet-num">1</span><img src="assets/material-1.jpg" alt="Recibe y descarga" loading="lazy"></div>
+                        <div class="sheet-label">Recibe y Descarga</div>
+                    </div>
+                    <div class="sheet-card-square">
+                        <div style="position:relative;"><span class="sheet-num">2</span><img src="assets/material-2.jpg" alt="Imprime y prepara" loading="lazy"></div>
+                        <div class="sheet-label">Imprime y Prepara</div>
+                    </div>
+                    <div class="sheet-card-square">
+                        <div style="position:relative;"><span class="sheet-num">3</span><img src="assets/material-3.jpg" alt="Elige tu carta" loading="lazy"></div>
+                        <div class="sheet-label">Elige Tu Carta</div>
+                    </div>
+                    <div class="sheet-card-square">
+                        <div style="position:relative;"><span class="sheet-num">4</span><img src="assets/material-4.jpg" alt="Comienza en paz" loading="lazy"></div>
+                        <div class="sheet-label">Comienza en Paz</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5 — BONOS EXCLUSIVOS -->
+            <section class="section section-light" id="bonos">
+                <div class="center">
+                    <span class="eyebrow">🎁 EXCLUSIVO EN EL PLAN COMPLETO</span>
+                    <h2>2 Bonos Para Profundizar Tu Fe</h2>
+                </div>
+                <div class="bonus-list">
+                    <div class="bonus-card-item">
+                        <div class="bonus-mockup"><img src="assets/bonus-1-mockup.jpg" alt="Bono Cartas del Padre" loading="lazy"></div>
+                        <span class="bonus-badge">Bono #1 · PDF</span>
+                        <h3>📖 Cartas del Padre</h3>
+                        <p>Mensajes extra de consuelo de Dios para leer cuando necesites un abrazo.</p>
+                        <div class="bonus-price-box"><span class="bonus-price-old">De US$8</span> por <span class="bonus-price-free">US$0</span></div>
+                    </div>
+                    <div class="bonus-card-item">
+                        <div class="bonus-mockup"><img src="assets/bonus-2-mockup.jpg" alt="Bono Devocional de las Emociones" loading="lazy"></div>
+                        <span class="bonus-badge">Bono #2 · Guía</span>
+                        <h3>🙏 Devocional de las Emociones</h3>
+                        <p>Una palabra bíblica para los días de ansiedad, tristeza o alegría.</p>
+                        <div class="bonus-price-box"><span class="bonus-price-old">De US$6</span> por <span class="bonus-price-free">US$0</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6 — OFERTA + GARANTÍA -->
+            <section class="section section-sand" id="oferta">
+                <div class="center">
+                    <span class="eyebrow">⚡ ELIGE TU PLAN</span>
+                    <h2>Comienza Tu Ritual Mañana Mismo</h2>
+                </div>
+
+                <div class="plans-container">
+                    <div class="plan-card">
+                        <h3>Plan Básico</h3>
+                        <p class="plan-desc">Acceso esencial a la caja devocional</p>
+                        <ul class="plan-features">
+                            <li>✓ Caja devocional completa (100+ mensajes)</li>
+                            <li>✓ Molde listo para imprimir</li>
+                            <li>✓ Entrega inmediata por WhatsApp</li>
+                            <li>✓ Garantía de 30 días</li>
+                        </ul>
+                        <span class="price-old-tag">De US$18</span>
+                        <div class="price-current">US$5</div>
+                        <span class="price-single-tag">Pago único</span>
+                        <button type="button" class="btn-cta btn-basic" id="openUpgradeModal">QUIERO EL PLAN BÁSICO</button>
+                    </div>
+
+                    <div class="plan-card highlight">
+                        <div class="plan-ribbon">⭐ MÁS COMPLETO</div>
+                        <h3>Plan Completo PRO</h3>
+                        <p class="plan-desc">Caja completa + 2 bonos exclusivos</p>
+                        <div class="plan-mockup"><img src="assets/hero-page-1.jpg" alt="Paquete completo Caja Café con Jesús" loading="lazy"></div>
+                        <ul class="plan-features">
+                            <li>✓ Caja devocional completa (100+ mensajes)</li>
+                            <li style="align-items:flex-start;">✓ Bono #1 — Cartas del Padre</li>
+                            <li style="align-items:flex-start;">✓ Bono #2 — Devocional de las Emociones</li>
+                            <li>✓ Entrega inmediata por WhatsApp</li>
+                            <li>✓ Garantía de 30 días</li>
+                        </ul>
+                        <span class="price-old-tag">De US$32</span>
+                        <div class="price-current">US$15</div>
+                        <span class="price-single-tag">Pago único</span>
+                        <a href="[LINK_CHECKOUT_COMPLETO]" class="btn-cta" data-utmify-checkout>QUIERO EL PLAN COMPLETO</a>
+                    </div>
+                </div>
+
+                <div class="warranty-card">
+                    <svg class="warranty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                    <h3>🛡️ 30 Días de Garantía Incondicional</h3>
+                    <p>Si dentro de 30 días sientes que no es para ti, te devolvemos el 100% de tu dinero, sin burocracia ni preguntas.</p>
+                </div>
+            </section>
+
+            <!-- 7 — FAQ + CIERRE -->
+            <section class="section section-light" id="faq">
+                <div class="center">
+                    <span class="eyebrow">❓ PREGUNTAS FRECUENTES</span>
+                    <h2>Preguntas Frecuentes</h2>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item active">
+                        <button class="faq-question" type="button">¿El material es físico o digital?</button>
+                        <div class="faq-answer"><p>Es 100% digital: recibes un PDF listo para imprimir en casa y armar tú misma.</p></div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">¿Necesito una impresora especial?</button>
+                        <div class="faq-answer"><p>No. Cualquier impresora doméstica, a color o en blanco y negro, funciona perfecto.</p></div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">¿Cuánto tiempo toma armar la caja?</button>
+                        <div class="faq-answer"><p>Entre 15 y 20 minutos la primera vez. Después, solo eliges una carta cada mañana.</p></div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">¿Cuál es la diferencia entre los planes?</button>
+                        <div class="faq-answer"><p>El Plan Completo incluye los 2 bonos exclusivos (Cartas del Padre y Devocional de las Emociones) además de la caja devocional completa del Plan Básico.</p></div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">¿Y si no me gusta?</button>
+                        <div class="faq-answer"><p>Tienes 30 días de garantía incondicional. Solo pide el reembolso y te devolvemos el 100%.</p></div>
+                    </article>
+                </div>
+
+                <div class="final-cta-box">
+                    <h2>Tu Momento con Dios No Puede Esperar Hasta Mañana</h2>
+                    <a href="#oferta" class="btn-cta">QUIERO MI CAJA DEVOCIONAL</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-section">
+            <p class="footer-copyright">© 2026 Caja Café con Jesús. Todos los derechos reservados.</p>
+            <p>Este producto tiene carácter devocional y educativo. No sustituye orientación religiosa o profesional.</p>
+            <p class="footer-links">Términos de Uso · Política de Privacidad · Soporte</p>
+        </footer>
+    </div>
+
+    <!-- POPUP MODAL DE UPGRADE -->
+    <div class="modal-overlay" id="upgradeModal" hidden>
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="closeUpgradeModal" aria-label="Cerrar">✕</button>
+            <span class="modal-badge">OFERTA EXCLUSIVA</span>
+            <h3 id="modalTitle">Espera — Lleva el Paquete Completo</h3>
+            <ul class="modal-features">
+                <li>✓ Caja devocional completa (100+ mensajes)</li>
+                <li>✓ Bono — Cartas del Padre</li>
+                <li>✓ Bono — Devocional de las Emociones</li>
+                <li>✓ Entrega inmediata por WhatsApp</li>
+            </ul>
+            <div class="modal-price">US$10</div>
+            <a href="[LINK_CHECKOUT_POPUP]" class="btn-cta" data-utmify-checkout>SÍ, QUIERO EL COMPLETO</a>
+            <a href="[LINK_CHECKOUT_BASICO]" class="modal-decline" data-utmify-checkout>No, prefiero solo el básico por US$5</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 1. ACORDEÓN FAQ
+            document.querySelectorAll(".faq-question").forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    var item = btn.parentElement;
+                    var isActive = item.classList.contains("active");
+                    document.querySelectorAll(".faq-item").forEach(function (i) { i.classList.remove("active"); });
+                    if (!isActive) item.classList.add("active");
+                });
+            });
+
+            // 2. POPUP MODAL DE UPGRADE
+            var modal = document.getElementById("upgradeModal");
+            var openBtn = document.getElementById("openUpgradeModal");
+            var closeBtn = document.getElementById("closeUpgradeModal");
+
+            function openModal() { modal.hidden = false; }
+            function closeModal() { modal.hidden = true; }
+
+            if (openBtn) openBtn.addEventListener("click", openModal);
+            if (closeBtn) closeBtn.addEventListener("click", closeModal);
+            modal.addEventListener("click", function (e) {
+                if (e.target === modal) closeModal();
+            });
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && !modal.hidden) closeModal();
+            });
+
+            // 3. BACK-REDIRECT (RECUPERACIÓN DE LEADS) — leva pro popup do upgrade
+            (function initBackRedirect() {
+                var RECOVERY_BASE_URL = "[LINK_CHECKOUT_POPUP]";
+                var currentParams = window.location.search;
+                var recoveryUrl = RECOVERY_BASE_URL + (currentParams ? (RECOVERY_BASE_URL.includes("?") ? "&" : "?") + currentParams.substring(1) : "");
+
+                history.pushState(null, "", window.location.href);
+                window.addEventListener("popstate", function () {
+                    history.pushState(null, "", window.location.href);
+                    window.location.href = recoveryUrl;
+                });
+            })();
+        });
+    </script>
+</body>
+</html>
