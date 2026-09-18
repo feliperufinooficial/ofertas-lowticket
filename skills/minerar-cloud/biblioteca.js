@@ -126,7 +126,11 @@ async function executarComLimite(itens, limite, fn) {
     throw new Error("Nenhum Chrome/Chromium encontrado. Defina a variável CHROME.");
   }
 
-  const browser = await chromium.launch({ executablePath, headless: true });
+  const proxyServer = process.env.HTTPS_PROXY || process.env.https_proxy || process.env.HTTP_PROXY || process.env.http_proxy;
+  const launchOptions = { executablePath, headless: true };
+  if (proxyServer) launchOptions.proxy = { server: proxyServer };
+
+  const browser = await chromium.launch(launchOptions);
 
   const resultados = await executarComLimite(args.keywords, args.paralelo, (kw) =>
     minerarKeyword(browser, kw, args.pais).catch((err) => ({
