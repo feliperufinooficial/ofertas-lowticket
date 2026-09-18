@@ -12,8 +12,8 @@ em lote por palavra-chave) e `oferta.js` (aprofundar um anúncio específico) de
 ## Seção 0: limite das colunas do Todoist
 
 Cada seção de pesquisa tem limite de **20 tarefas abertas**. Antes de minerar, conte as tarefas
-abertas via API do Todoist (`GET /api/v1/tasks?project_id=...`, filtrando por `section_id`,
-paginando até o fim) em:
+abertas com a ferramenta MCP `find-tasks` (`responsibleUserFiltering: "all"`, paginação até o
+fim) filtrando por `section_id`, em:
 - **PESQUISA BR** (project_id do projeto "Ofertas Mineradas", section PESQUISA BR)
 - **PESQUISA LATAM** (mesma project, section PESQUISA LATAM)
 
@@ -49,14 +49,16 @@ Se os dois estiverem cheios, termine imediatamente sem rodar setup nem mineraç�
   - **BR**: Básico R$ 10 · Upgrade (popup) R$ 17 · Completo R$ 27.
   - **LATAM**: Básico US$ 5 · Upgrade (popup) US$ 10 · Completo US$ 15.
 - Onde salvar: Todoist, projeto **Ofertas Mineradas**. Ofertas BR na seção **PESQUISA BR**,
-  ofertas LATAM na seção **PESQUISA LATAM**. Usar a API REST do Todoist diretamente (ver
-  "Acesso ao Todoist" abaixo) — não há conector MCP de Todoist disponível nesta rotina.
+  ofertas LATAM na seção **PESQUISA LATAM**. Usar as ferramentas MCP do Todoist disponíveis na
+  sessão (ver "Acesso ao Todoist" abaixo) — a API REST direta via `curl` é bloqueada pela
+  política de rede do sandbox, não tente contornar isso.
 
 ## O que já existe (checar antes de minerar)
 
-- Ler TODOS os projetos e seções do Todoist do usuário (`GET /api/v1/projects` e
-  `GET /api/v1/tasks`, paginando até o fim) e anotar nome, nicho, público e formato de cada
-  tarefa de oferta existente (qualquer prefixo: `OFERTA NOVA NN`, nome solto, etc.).
+- Ler TODOS os projetos e seções do Todoist do usuário com `find-projects` e `find-tasks`
+  (`responsibleUserFiltering: "all"`, paginação até o fim) e anotar nome, nicho, público e
+  formato de cada tarefa de oferta existente (qualquer prefixo: `OFERTA NOVA NN`, nome solto,
+  etc.).
 - **Oferta morta conta como feita.** Qualquer tarefa arquivada/concluída ou com "não validou"
   na descrição é uma ideia já testada que não vendeu: nunca proponha a mesma ideia, o mesmo
   público com o mesmo formato, nem variação próxima. Cite o motivo de morte (quando escrito)
@@ -80,15 +82,16 @@ Se os dois estiverem cheios, termine imediatamente sem rodar setup nem mineraç�
    de aprovar. Parar ao atingir a meta do dia (Seção 0). Limite de 45 minutos de trabalho — se
    estourar, entregar o que já foi aprovado e dizer quantas faltaram.
 
-## Acesso ao Todoist (API REST direta, sem MCP)
+## Acesso ao Todoist (ferramentas MCP)
 
-Base: `https://api.todoist.com/api/v1/`. Autenticação: header
-`Authorization: Bearer <TODOIST_API_TOKEN>` (token fornecido no prompt da rotina).
+Use sempre as ferramentas MCP do conector Todoist disponíveis na sessão — nunca `curl`/API REST
+direta (`api.todoist.com` é bloqueado pela política de egress do sandbox; se aparecer erro de
+rede numa tentativa de acesso direto, é esperado, não insista).
 
-- Listar projetos: `GET /projects`
-- Listar tarefas de um projeto: `GET /tasks?project_id=<id>` (paginar com `cursor` até `null`)
-- Criar tarefa: `POST /tasks` com JSON `{ "content": "...", "description": "...",
-  "project_id": "...", "section_id": "...", "priority": 1-4, "labels": ["LATAM"] }`
+- Listar projetos: `find-projects`
+- Listar tarefas: `find-tasks` (com `responsibleUserFiltering: "all"` e paginação até o fim)
+- Criar tarefa: `add-tasks` com `content`, `description`, `project_id`, `section_id`,
+  `priority` (1-4) e `labels: ["LATAM"]` quando aplicável
 
 ## Entrega
 
